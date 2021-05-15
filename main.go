@@ -451,7 +451,7 @@ func main() {
 	//router.Use(cors.Default())
 
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:9527"},
+		AllowOrigins:     []string{"http://localhost:9527", "http://8.141.65.125:9527"},
 		AllowMethods:     []string{"GET", "POST", "PUT", "PATCH", "DELETE", "HEAD"},
 		AllowHeaders:     []string{"Origin", "Content-Length", "Content-Type", "X-Token"},
 		ExposeHeaders:    []string{"Content-Length"},
